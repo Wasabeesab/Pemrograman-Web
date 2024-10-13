@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Well Fitness</title>
+  </head>
+  <body>
+    <h1>Pendaftaran Kelas</h1>
+    <h2>Well Fitness Kosambi</h2>
+    <form action="table.html">
+      <fieldset>
+        <table border="0">
+          <!-- nama -->
+          <tr>
+            <td><label for="nama">Nama Lengkap </label></td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                required
+                autofocus
+                placeholder="Masukkan Nama Lengkap Anda"
+              />
+            </td>
+          </tr>
+
+          <!-- Instruktur -->
+          <tr>
+            <td><label for="ni">Nama Instruktur </label></td>
+            <td>
+              <input
+                type="text"
+                name="ni"
+                id="ni"
+                required
+                placeholder="Masukkan Nama Instruktur"
+              />
+            </td>
+          </tr>
+
+          <!-- no telpon -->
+          <tr>
+            <td><label for="notelp">No Telp </label></td>
+            <td>
+              <input
+                type="text"
+                name="notelp"
+                id="notelp"
+                pattern="[0-9]{12}"
+                required
+                title="Harus diisi 12 angka"
+                placeholder="Contoh: 081234567890"
+              />
+            </td>
+          </tr>
+
+          <!-- tanggal kelas -->
+          <tr>
+            <td><label for="tanggal">Tanggal Mulai Kelas </label></td>
+            <td>
+              <input
+                type="date"
+                name="tanggal"
+                id="tanggal"
+                required
+                placeholder="Pilih Tanggal Mulai Kelas"
+              />
+            </td>
+          </tr>
+
+          <!-- jenis kelas-->
+          <tr>
+            <td><label for="jk">Jenis Kelas </label></td>
+            <td>
+              <input type="radio" name="jk" id="Yoga" value="Yoga" required />
+              <label for="Yoga">Yoga</label>
+            </td>
+            <td>
+              <input type="radio" name="jk" id="Zumba" value="Zumba" />
+              <label for="Zumba">Zumba</label>
+            </td>
+            <td>
+              <input type="radio" name="jk" id="Fitness" value="Fitness" />
+              <label for="Fitness">Fitness</label>
+            </td>
+          </tr>
+
+          <!-- paket keanggotaan -->
+          <tr>
+            <td><label for="pk">Paket Keanggotaan </label></td>
+            <td>
+              <input
+                type="radio"
+                name="pk"
+                id="Harian"
+                value="Harian"
+                required
+              />
+              <label for="Harian">Harian</label>
+            </td>
+            <td>
+              <input type="radio" name="pk" id="Bulanan" value="Bulanan" />
+              <label for="Bulanan">Bulanan</label>
+            </td>
+            <td>
+              <input type="radio" name="pk" id="Tahunan" value="Tahunan" />
+              <label for="Tahunan">Tahunan</label>
+            </td>
+          </tr>
+
+          <!-- waktu kelas -->
+          <tr>
+            <td><label for="waktu">Pilihan Waktu Kelas</label></td>
+            <td>
+              <select name="waktu" id="waktu" required>
+                <option value="" disabled selected></option>
+                <option value="pagi">Pagi</option>
+                <option value="siang">Siang</option>
+                <option value="sore">Sore</option>
+                <option value="malam">Malam</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- metode pembayaran -->
+          <tr>
+            <td><label for="bayar">Metode Pembayaran</label></td>
+            <td>
+              <select name="bayar" id="bayar" required>
+                <option value="" disabled selected></option>
+                <option value="cash">Cash</option>
+                <option value="debit">Debit</option>
+                <option value="qris">QRIS</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- penyakit -->
+          <tr>
+            <td><label for="penyakit">Memiliki Penyakit Bawaan?</label></td>
+            <td>
+              <select name="penyakit" id="penyakit" required>
+                <option value="" disabled selected></option>
+                <option value="ya">Ya</option>
+                <option value="tidak">Tidak</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- alamat -->
+          <tr>
+            <td><label for="alamat">Alamat Lengkap </label></td>
+            <td>
+              <textarea
+                name="alamat"
+                id="alamat"
+                cols="20"
+                rows="4"
+                required
+                placeholder="Masukkan Alamat Lengkap Anda"
+              ></textarea>
+            </td>
+          </tr>
+
+          <!-- catatan -->
+          <tr>
+            <td><label for="catatan">Catatan </label></td>
+            <td>
+              <textarea
+                name="catatan"
+                id="catatan"
+                cols="20"
+                rows="4"
+                placeholder="Catatan Tambahan"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="Simpan" />
+      </fieldset>
+    </form>
+  </body>
+</html>
